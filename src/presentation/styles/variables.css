@@ -1,0 +1,60 @@
+root {
+    --font-family: 'Arial', sans-serif;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 20px;
+    --line-height-small: 1.5;
+    --line-height-medium: 1.6;
+    --line-height-large: 1.8;
+
+    --spacing-xxs: 4px;
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+    --spacing-xxxl: 64px;
+
+    --icon-size-small: 16px;
+    --icon-size-medium: 24px;
+    --icon-size-large: 32px;
+
+    --border-radius-small: 4px;
+    --border-radius-medium: 8px;
+    --border-radius-large: 12px;
+
+    --box-shadow-small: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --box-shadow-large: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+    --color-black: rgba(13, 13, 18, 1);
+    --color-white: rgb(255, 255, 255);
+    --color-grey: rgb(246, 248, 250, 100);
+    --color-grey-100: rgb(236, 239, 243, 100);
+    --color-grey-200: rgba(164, 171, 184, 1);
+    --color-grey-300: rgb(128, 136, 151);
+    --color-grey-400: rgb(102, 109, 128);
+    --color-grey-500: rgb(53, 56, 73);
+    --color-success-100: rgba(208, 250, 223, 1);
+    --color-success-200: rgba(40, 199, 128, 1);
+    --color-success-300: rgb(3, 151, 84);
+}
+
+@media screen and (max-width: 767px) {
+    :root {
+        --container-max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        --container-max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --container-max-width: 1200px;
+    }
+}
