@@ -1,0 +1,4 @@
+{
+  "extends": ["@meu-kit/eslint-config/browser/react"],
+  "rules": {}
+}
