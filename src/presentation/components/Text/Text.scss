@@ -15,6 +15,18 @@
     font-weight: var(--font-weigth-bold);
   }
 
+  &--color-white {
+    color: var(--color-white);
+  }
+
+  &--color-black {
+    color: var(--color-black);
+  }
+
+  &--color-grey {
+    color: var(--color-grey);
+  }
+
   &--xs {
     font-size: var(--spacing-xs);
   }

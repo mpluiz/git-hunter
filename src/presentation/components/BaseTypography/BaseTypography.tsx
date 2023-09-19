@@ -4,6 +4,6 @@ import '@/presentation/components/BaseTypography/BaseTypography.scss'
 
 type BaseTypographyProps = ComponentProps<HTMLParagraphElement>
 
-export function BaseTypography({ children, className }: BaseTypographyProps) {
-  return <p className={classNames('base-typography', className)}>{children}</p>
+export function BaseTypography({ children, className, ...others }: BaseTypographyProps) {
+  return <p className={classNames('base-typography', className)} {...others}>{children}</p>
 }
