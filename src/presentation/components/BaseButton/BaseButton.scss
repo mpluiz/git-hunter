@@ -1,0 +1,28 @@
+.base-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-xs);
+  border-radius: var(--border-radius-sm);
+  border: var(--border-width) solid var(--color-grey-100);
+  transition: box-shadow 300ms;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: var(--box-shadow-primary);
+  }
+
+  &__icon {
+    display: flex;
+    margin-left: var(--spacing-xs);
+  }
+
+  &--primary {
+    background: var(--color-white);
+  }
+
+  &--secondary {
+    background: var(--color-black);
+  }
+
+}
