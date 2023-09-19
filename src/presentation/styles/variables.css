@@ -1,11 +1,12 @@
-root {
+:root {
     --font-family: 'Arial', sans-serif;
-    --font-size-small: 14px;
-    --font-size-medium: 16px;
-    --font-size-large: 20px;
-    --line-height-small: 1.5;
-    --line-height-medium: 1.6;
-    --line-height-large: 1.8;
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 18px;
+    --line-height-sm: 1.5;
+    --line-height-md: 1.6;
+    --line-height-lg: 1.8;
 
     --spacing-xxs: 4px;
     --spacing-xs: 8px;
@@ -16,17 +17,19 @@ root {
     --spacing-xxl: 48px;
     --spacing-xxxl: 64px;
 
-    --icon-size-small: 16px;
-    --icon-size-medium: 24px;
-    --icon-size-large: 32px;
+    --icon-size-sm: 16px;
+    --icon-size-md: 24px;
+    --icon-size-lg: 32px;
 
-    --border-radius-small: 4px;
-    --border-radius-medium: 8px;
-    --border-radius-large: 12px;
+    --border-width: 1px;
+    --border-color: #ccc;
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
 
-    --box-shadow-small: 0 2px 4px rgba(0, 0, 0, 0.1);
-    --box-shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.2);
-    --box-shadow-large: 0 8px 16px rgba(0, 0, 0, 0.3);
+    --box-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --box-shadow-md: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --box-shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.3);
 
     --color-black: rgba(13, 13, 18, 1);
     --color-white: rgb(255, 255, 255);
