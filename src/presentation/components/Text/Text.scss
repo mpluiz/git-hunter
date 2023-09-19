@@ -1,0 +1,29 @@
+.text {
+  &--xs {
+    font-size: var(--spacing-xs);
+  }
+
+  &--sm {
+    font-size: var(--spacing-sm);
+  }
+
+  &--md {
+    font-size: var(--spacing-md);
+  }
+
+  &--lg {
+    font-size: var(--spacing-lg);
+  }
+
+  &--xl {
+    font-size: var(--spacing-xl);
+  }
+
+  &--xxl {
+    font-size: var(--spacing-xxl);
+  }
+
+  &--xxxl {
+    font-size: var(--spacing-xxxl);
+  }
+}
