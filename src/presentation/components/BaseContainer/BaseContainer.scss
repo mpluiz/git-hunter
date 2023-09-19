@@ -1,0 +1,17 @@
+.base-container {
+  display: flex;
+  flex-direction: column;
+  height: min-content;
+  justify-content: flex-start;
+  max-width: var(--container-max-width);
+  gap: var(--spacing-xs);
+  border-radius: var(--border-radius-xl);
+
+  &--primary {
+    background: var(--color-white)
+  }
+
+  &--secondary {
+    background: var(--color-grey-100)
+  }
+}
