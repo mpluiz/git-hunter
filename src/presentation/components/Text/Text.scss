@@ -1,4 +1,20 @@
 .text {
+  &--regular {
+    font-weight: var(--font-weigth-regular);
+  }
+
+  &--medium {
+    font-weight: var(--font-weigth-medium);
+  }
+
+  &--semi-bold {
+    font-weight: var(--font-weigth-semi-bold);
+  }
+
+  &--bold {
+    font-weight: var(--font-weigth-bold);
+  }
+
   &--xs {
     font-size: var(--spacing-xs);
   }
