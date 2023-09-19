@@ -1,4 +1,7 @@
 {
-  "extends": ["@meu-kit/eslint-config/browser/react"],
+  "extends": [
+    "@meu-kit/eslint-config/browser/react",
+    "plugin:storybook/recommended"
+  ],
   "rules": {}
 }

@@ -23,7 +23,8 @@
 
     --border-width: 1px;
     --border-color: #ccc;
-    --border-radius-sm: 4px;
+    --border-radius-xs: 4px;
+    --border-radius-sm: 6px;
     --border-radius-md: 8px;
     --border-radius-lg: 12px;
 
