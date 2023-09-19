@@ -15,7 +15,6 @@ describe('BaseButton', () => {
     render(<BaseButton icon={<DiscordLogoIcon />}>valid-text</BaseButton>)
     const sut = screen.getByRole('img')
 
-    screen.debug()
     expect(sut).toBeTruthy()
     expect(sut.className).toContain('base-button__icon')
   })
