@@ -4,7 +4,7 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
-      "@test/*": ["tests/*"]
+      "@tests/*": ["tests/*"]
     },
     "types": ["vitest/globals"]
   },
