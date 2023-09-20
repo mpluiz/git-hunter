@@ -9,7 +9,7 @@ export interface AxiosHttpClientProps {
 export class AxiosHttpClient implements HttpClient<AxiosInstance> {
   readonly http: AxiosInstance
 
-  constructor({ baseUrl, path }: AxiosHttpClientProps) {
+  constructor({ baseUrl, path = '' }: AxiosHttpClientProps) {
     this.http = axios.create({
       baseURL: baseUrl + path
     })

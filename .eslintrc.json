@@ -3,5 +3,7 @@
     "@meu-kit/eslint-config/browser/react",
     "plugin:storybook/recommended"
   ],
-  "rules": {}
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "off"
+  }
 }
