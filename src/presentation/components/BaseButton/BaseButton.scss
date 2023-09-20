@@ -1,4 +1,5 @@
 .base-button {
+  $root: &;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,6 +13,11 @@
     box-shadow: var(--box-shadow-primary);
   }
 
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
   &__icon {
     display: flex;
     margin-left: var(--spacing-xs);
@@ -23,6 +29,10 @@
 
   &--secondary {
     background: var(--color-black);
+
+    #{$root}__icon {
+      color: var(--color-white);
+    }
   }
 
 }
