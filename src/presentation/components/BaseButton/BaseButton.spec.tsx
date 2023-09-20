@@ -18,4 +18,12 @@ describe('BaseButton', () => {
     expect(sut).toBeTruthy()
     expect(sut.className).toContain('base-button__icon')
   })
+
+  it('should render component with correct variant', () => {
+    render(<BaseButton variant="secondary">valid-text</BaseButton>)
+    const sut = screen.getByRole('button')
+
+    expect(sut).toBeTruthy()
+    expect(sut.className).toContain('base-button base-button--secondary')
+  })
 })
