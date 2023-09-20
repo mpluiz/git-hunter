@@ -1,7 +1,8 @@
 import type { Preview } from "@storybook/react";
-import '@/presentation/styles/normalize.css'
-import '@/presentation/styles/global.css'
-import '@/presentation/styles/variables.css'
+
+import '@/presentation/assets/styles/normalize.css'
+import '@/presentation/assets/styles/global.css'
+import '@/presentation/assets/styles/variables.css'
 
 const preview: Preview = {
   parameters: {
