@@ -1,7 +1,7 @@
 import { User } from '@/domain/entities/user.ts'
-import { InMemoryUserService } from '@tests/services/user-service.ts'
 import { GetUserUseCase } from '@/application/usecases'
-import { makeUser } from '@tests/factories/make-user.ts'
+import { InMemoryUserService } from '@tests/services'
+import { makeUser } from '@tests/factories'
 
 let inMemoryUserService: InMemoryUserService
 let sut: GetUserUseCase
