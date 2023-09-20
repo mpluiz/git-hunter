@@ -1,5 +1,6 @@
 import { User } from '@/domain/entities/user.ts'
 import { HttpClient } from '@/application/protocols/http/http-client.ts'
+import { UserMap } from '@/application/mappers/user.ts'
 
 export interface IUserService {
   getByName(username: string) : Promise<User | null>
@@ -15,8 +16,6 @@ export class UserService implements IUserService {
       return null
     }
 
-    const { id, name, followers, following, bio, avatar_url: avatarUrl, html_url: profileUrl } = response.data
-
-    return User.create({ id, name, followers, following, bio, avatarUrl, profileUrl })
+    return UserMap.toDomain(response.data)
   }
 }
