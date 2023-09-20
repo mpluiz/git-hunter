@@ -3,6 +3,7 @@ import { Entity } from '@/domain/entities/entity.ts'
 export interface RepositoryProps {
   id: number
   name: string
+  fullName: string
   stars: number
   language: string
   description?: string
