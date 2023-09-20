@@ -3,16 +3,16 @@ import { Either, success } from '@/utils/either.ts'
 import { Repository } from '@/domain/entities/repository.ts'
 import { IRepositoryService } from '@/application/services'
 
-interface FetchRepositoriesUseCaseeRequest {
+interface FetchRepositoriesUseCaseRequest {
   username: string
 }
 
 type FetchRepositoriesUseCaseResponse = Either<null, { repositories: Repository[] | null}>
 
-export class FetchRepositoriesUseCase implements IFetchRepositoriesUseCase<FetchRepositoriesUseCaseeRequest, FetchRepositoriesUseCaseResponse> {
+export class FetchRepositoriesUseCase implements IFetchRepositoriesUseCase<FetchRepositoriesUseCaseRequest, FetchRepositoriesUseCaseResponse> {
   constructor(private repositoryService: IRepositoryService) {}
 
-  async execute({ username }: FetchRepositoriesUseCaseeRequest): Promise<FetchRepositoriesUseCaseResponse> {
+  async execute({ username }: FetchRepositoriesUseCaseRequest): Promise<FetchRepositoriesUseCaseResponse> {
     const repositories = await this.repositoryService.fetchRepositoriesByUserName(username)
 
     return success({ repositories })
