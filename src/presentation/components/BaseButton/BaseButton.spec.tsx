@@ -19,6 +19,14 @@ describe('BaseButton', () => {
     expect(sut.className).toContain('base-button__icon')
   })
 
+  it('should render component with loading status', () => {
+    render(<BaseButton loading>valid-text</BaseButton>)
+    const sut = screen.getByRole('status')
+
+    expect(sut).toBeTruthy()
+    expect(sut.className).toContain('loader')
+  })
+
   it('should render component with correct variant', () => {
     render(<BaseButton variant="secondary">valid-text</BaseButton>)
     const sut = screen.getByRole('button')
