@@ -1,0 +1,26 @@
+.text-field {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--spacing-xs);
+
+  &__input {
+    box-sizing: border-box;
+    appearance: none;
+    outline: 0;
+    width: 100%;
+    height: var(--spacing-xxl);
+    padding: 0 var(--spacing-md);
+    font-family: var(--font-family);
+    font-size: var(--spacing-md);
+    color: var(--color-black);
+    background: var(--color-white);
+    border: var(--border-width-2x) solid transparent;
+    border-radius: var(--border-radius-sm);
+    transition: border-color 0.2s ease 0s;
+
+    &:focus, &:focus-within {
+      border-color: var(--color-black);
+    }
+  }
+}
