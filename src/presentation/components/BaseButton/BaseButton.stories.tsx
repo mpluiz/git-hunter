@@ -14,6 +14,10 @@ export const Default: Story = {
   args: { children: 'valid-text' }
 }
 
+export const Loading: Story = {
+  args: { children: 'valid-text', loading: true }
+}
+
 export const Icon: Story = {
   args: { children: 'valid-text', icon: <DiscordLogoIcon /> }
 }
