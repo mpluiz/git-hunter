@@ -5,12 +5,12 @@
   justify-content: space-between;
   padding: var(--spacing-xs);
   border-radius: var(--border-radius-sm);
-  border: var(--border-width) solid var(--color-grey-100);
-  transition: box-shadow 300ms;
+  border: var(--border-width-2x) solid transparent;
+  transition: border-color 0.2s ease 0s;
   cursor: pointer;
 
-  &:hover {
-    box-shadow: var(--box-shadow-primary);
+  &:focus, &:focus-within, &:hover {
+    border-color: var(--color-black);
   }
 
   &:disabled {
@@ -21,6 +21,14 @@
   &__icon {
     display: flex;
     margin-left: var(--spacing-xs);
+  }
+
+  &--size-md {
+    height: var(--spacing-xl);
+  }
+
+  &--size-lg {
+    height: var(--spacing-xxl);
   }
 
   &--primary {
@@ -34,5 +42,4 @@
       color: var(--color-white);
     }
   }
-
 }

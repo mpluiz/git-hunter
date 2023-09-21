@@ -7,6 +7,7 @@ import '@/presentation/components/BaseButton/BaseButton.scss'
 export interface BaseButtonProps extends ComponentProps<HTMLButtonElement> {
   type?: 'submit' | 'reset' | 'button'
   variant?: 'primary' | 'secondary'
+  size?: 'md' | 'lg',
   icon?: ReactNode
   disabled?: boolean
 }
@@ -16,19 +17,20 @@ export function BaseButton({
   className,
   type = 'button',
   variant = 'primary',
+  size = 'md',
   disabled = false,
   icon,
   ...others
 }: BaseButtonProps) {
   return (
     <button
-      className={classNames('base-button', { [`base-button--${variant}`]: variant }, className)}
+      className={classNames(`base-button base-button--${variant} base-button--size-${size}`, className)}
       type={type}
       disabled={disabled}
       {...others}
     >
       <Text size="md" color={variant === 'primary' ? 'black' : 'white'}>{children}</Text>
-      <div role="img" className="base-button__icon">{icon}</div>
+      {icon && <div role="img" className="base-button__icon">{icon}</div>}
     </button>
   )
 }
