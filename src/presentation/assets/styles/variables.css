@@ -48,6 +48,8 @@
     --color-success-100: rgba(208, 250, 223, 1);
     --color-success-200: rgba(40, 199, 128, 1);
     --color-success-300: rgb(3, 151, 84);
+    --color-danger: rgb(198, 42, 47);
+    --color-danger-500: rgb(255, 229, 229);
 }
 
 @media screen and (max-width: 767px) {
