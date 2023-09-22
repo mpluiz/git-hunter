@@ -18,4 +18,16 @@ describe('Profile', () => {
     expect(name).toBeTruthy()
     expect(sut.className).toContain('repository')
   })
+
+  it('should render component with current modifier', () => {
+    render(
+      <MemoryRouter initialEntries={['/']}>
+        <Repository repository={makeRepository({ name: 'current' }).toValue()} current />
+      </MemoryRouter>
+    )
+
+    const name = screen.getByText<HTMLLinkElement>('current')
+
+    expect(name).toBeTruthy()
+  })
 })
