@@ -1,6 +1,5 @@
 import classNames from 'classnames'
-import { ComponentProps } from '@/presentation/components/core'
-import { BaseContainer } from '@/presentation/components/BaseContainer'
+import { ComponentProps, BaseContainer } from '@/presentation/components'
 import '@/presentation/components/CardListItem/CardListItem.scss'
 
 type CardListItemProps = ComponentProps<HTMLDivElement>

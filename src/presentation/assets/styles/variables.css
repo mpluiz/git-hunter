@@ -58,18 +58,33 @@
 
 @media screen and (max-width: 767px) {
     :root {
+        --dynamic-title-font: 56px;
+        --dynamic-padding-space: 16px;
+        --dynamic-title-position: calc(100vh /3);
         --container-max-width: 100%;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     :root {
+        --dynamic-title-font: 96px;
+        --dynamic-padding-space: 24px;
+        --dynamic-title-position: calc(100vh /3);
         --container-max-width: 768px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     :root {
+        --dynamic-title-font: 128px;
+        --dynamic-padding-space: 32px;
+        --dynamic-title-position: calc(100vh /3);
         --container-max-width: 1024px;
+    }
+}
+
+@media screen and (max-height: 1079px) {
+    :root {
+        --dynamic-title-position: calc(100vh /4);
     }
 }

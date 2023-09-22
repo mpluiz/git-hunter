@@ -1,5 +1,5 @@
 import { screen, render } from '@testing-library/react'
-import { Loader } from '@/presentation/components/Loader/Loader.tsx'
+import { Loader } from '@/presentation/components'
 
 describe('Loader', () => {
   it('should render component with correct items', () => {

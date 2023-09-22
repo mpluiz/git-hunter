@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import { ComponentProps } from '@/presentation/components/core'
+import { ComponentProps } from '@/presentation/components'
 import '@/presentation/components/BaseContainer/BaseContainer.scss'
 
 interface BaseContainerProps extends ComponentProps<HTMLDivElement> {

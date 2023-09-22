@@ -1,5 +1,5 @@
 import { screen, render } from '@testing-library/react'
-import { BaseButton } from '@/presentation/components/BaseButton'
+import { BaseButton } from '@/presentation/components'
 import { DiscordLogoIcon } from '@radix-ui/react-icons'
 
 describe('BaseButton', () => {

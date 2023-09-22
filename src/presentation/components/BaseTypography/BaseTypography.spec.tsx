@@ -1,5 +1,5 @@
 import { screen, render } from '@testing-library/react'
-import { BaseTypography } from '@/presentation/components/BaseTypography'
+import { BaseTypography } from '@/presentation/components'
 
 describe('BaseTypography', () => {
   it('should render component', () => {

@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { BaseContainer } from '@/presentation/components/BaseContainer'
-import { Text } from '@/presentation/components/Text'
+import { BaseContainer, Text } from '@/presentation/components'
 
 const meta: Meta<typeof BaseContainer> = {
   component: BaseContainer
