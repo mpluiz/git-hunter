@@ -14,7 +14,7 @@ const repositoriesMock:RepositoryProps[] = [
     name: 'clean-ts-api',
     description: 'API em NodeJs usando Typescript, TDD, Clean Architecture, Design Patterns e SOLID principles',
     fullName: 'mpluiz/clean-ts-api',
-    stars: 0,
+    stars: 10,
     repositoryUrl: 'https://github.com/mpluiz/clean-ts-api'
   },
   {
