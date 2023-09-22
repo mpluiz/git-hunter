@@ -1,4 +1,5 @@
 import { useCallback, useContext, useEffect, useState } from 'react'
+import * as Sentry from '@sentry/react'
 import { UserContext } from '@/presentation/hooks/context/user.ts'
 import { RepositoryProps } from '@/domain/entities/repository.ts'
 import { UserProps } from '@/domain/entities/user.ts'
@@ -31,9 +32,7 @@ export function UserDetailsPage({ fetchRepositories }: UserDetailsPageProps) {
   }, [currentUser, fetchRepositories])
 
   useEffect(() => {
-    handleFetchRepositories().catch(() => {
-      // TODO: handler possible error
-    })
+    handleFetchRepositories().catch((error) => Sentry.captureException(error))
   }, [handleFetchRepositories])
 
   return (

@@ -1,4 +1,5 @@
 import { useCallback, useContext, useEffect, useState } from 'react'
+import * as Sentry from '@sentry/react'
 import { useParams } from 'react-router-dom'
 import { GetRepositoryUseCase } from '@/application/usecases'
 import { UserContext } from '@/presentation/hooks/context/user.ts'
@@ -28,9 +29,7 @@ export function RepositoryDetailsPage({ getRepository }: RepositoryDetailsPagePr
   }, [repository, getRepository, getCurrentUser])
 
   useEffect(() => {
-    handleGetRepository().catch(() => {
-      // TODO: handler possible error
-    })
+    handleGetRepository().catch((error) => Sentry.captureException(error))
   }, [handleGetRepository])
 
   console.log(currentRepository)

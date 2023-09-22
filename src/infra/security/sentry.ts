@@ -1,9 +1,5 @@
 import * as Sentry from '@sentry/react'
 
-console.log('Sentry init')
-console.log('sentry dns', import.meta.env.VITE_SENTRY_DNS)
-console.log('sentry dns', import.meta.env.VITE_APP_URL)
-
 export const SentryConfig = {
   dsn: import.meta.env.VITE_SENTRY_DNS,
   integrations: [new Sentry.BrowserTracing()],
