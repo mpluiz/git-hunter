@@ -1,0 +1,11 @@
+.home-page {
+  background: var(--color-black-500);
+  margin: auto;
+  width: 100%;
+  padding: var(--dynamic-padding-space);
+
+  &__content {
+    display: flex;
+    gap: var(--spacing-xs);
+  }
+}
