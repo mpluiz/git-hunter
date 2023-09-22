@@ -1,5 +1,5 @@
 import { screen, render, waitFor } from '@testing-library/react'
-import { Avatar } from '@/presentation/components/Avatar'
+import { Avatar } from '@/presentation/components'
 
 describe('Avatar', () => {
   it('should render component with correct modifiers', async () => {

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { BaseButton } from '@/presentation/components/BaseButton'
+import { BaseButton } from '@/presentation/components'
 import { DiscordLogoIcon } from '@radix-ui/react-icons'
 
 const meta: Meta<typeof BaseButton> = {

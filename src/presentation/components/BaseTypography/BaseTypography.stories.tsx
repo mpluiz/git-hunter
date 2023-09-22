@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { BaseTypography } from '@/presentation/components/BaseTypography'
+import { BaseTypography } from '@/presentation/components'
 
 const meta: Meta<typeof BaseTypography> = {
   component: BaseTypography

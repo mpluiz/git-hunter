@@ -1,7 +1,5 @@
-import { ComponentProps } from '@/presentation/components/core'
-import { BaseContainer } from '@/presentation/components/BaseContainer'
+import { ComponentProps, BaseContainer, CardListItem } from '@/presentation/components'
 import '@/presentation/components/CardList/CardList.scss'
-import { CardListItem } from '@/presentation/components/CardListItem'
 
 interface item {
   name: string

@@ -1,5 +1,5 @@
 import * as RAvatar from '@radix-ui/react-avatar'
-import { Text } from '@/presentation/components/Text'
+import { Text } from '@/presentation/components'
 import '@/presentation/components/Avatar/Avatar.scss'
 
 interface AvatarProps {

@@ -1,5 +1,5 @@
 import { screen, render } from '@testing-library/react'
-import { Toast } from '@/presentation/components/Toast/Toast.tsx'
+import { Toast } from '@/presentation/components'
 
 describe('Toast', () => {
   it('should render component with correct modifiers', () => {
@@ -8,7 +8,6 @@ describe('Toast', () => {
     const title = screen.getByText('valid-title')
     const description = screen.getByText('valid-description')
 
-    //
     expect(sut).toBeTruthy()
     expect(title).toBeTruthy()
     expect(description).toBeTruthy()

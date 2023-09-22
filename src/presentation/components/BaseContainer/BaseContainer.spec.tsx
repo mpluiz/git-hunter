@@ -1,5 +1,5 @@
 import { screen, render } from '@testing-library/react'
-import { BaseContainer } from '@/presentation/components/BaseContainer'
+import { BaseContainer } from '@/presentation/components'
 
 describe('BaseContainer', () => {
   it('should render component with correct modifiers', () => {

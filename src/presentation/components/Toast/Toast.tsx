@@ -1,6 +1,5 @@
 import { Dispatch, SetStateAction } from 'react'
-import { ComponentProps } from '@/presentation/components/core'
-import { Text } from '@/presentation/components/Text'
+import { ComponentProps, Text } from '@/presentation/components'
 import * as RToast from '@radix-ui/react-toast'
 import '@/presentation/components/Toast/Toast.scss'
 

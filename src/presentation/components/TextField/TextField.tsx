@@ -1,6 +1,5 @@
-import { ComponentProps } from '@/presentation/components/core'
+import { ComponentProps, Text } from '@/presentation/components'
 import '@/presentation/components/TextField/TextField.scss'
-import { Text } from '@/presentation/components/Text'
 
 interface TextFieldProps extends ComponentProps<HTMLInputElement> {
   label?: string

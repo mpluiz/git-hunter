@@ -1,5 +1,5 @@
 import { screen, render } from '@testing-library/react'
-import { Text } from '@/presentation/components/Text'
+import { Text } from '@/presentation/components'
 
 describe('Text', () => {
   it('should render component with correct modifiers', () => {

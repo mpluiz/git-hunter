@@ -1,5 +1,5 @@
 import { screen, render } from '@testing-library/react'
-import { CardList } from '@/presentation/components/CardList/CardList.tsx'
+import { CardList } from '@/presentation/components'
 
 describe('CardList', () => {
   it('should render component with correct items', () => {
