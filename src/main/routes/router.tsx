@@ -12,6 +12,7 @@ export function MainRouter() {
           <Route path="/" element={<MakeHomePage />} />
           <Route path="/users/:user/details" element={<MakeUserDetailsPage />} />
           <Route path="/repositories/:repository/details" element={<MakeRepositoryDetailsPage />} />
+          <Route path="*" element={<MakeHomePage />} />
         </Routes>
 
       </UserContext.Provider>
