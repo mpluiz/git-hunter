@@ -1,4 +1,4 @@
-import { IRepositoryService } from '@/application/services'
+import { FetchRepositoriesRequest, IRepositoryService } from '@/application/services'
 import { Repository } from '@/domain/entities/repository.ts'
 
 export class InMemoryRepositoryService implements IRepositoryService {
@@ -9,7 +9,7 @@ export class InMemoryRepositoryService implements IRepositoryService {
     return this.repositories[index]
   }
 
-  async fetchRepositoriesByUserName(username: string): Promise<Repository[] | null> {
+  async fetchRepositories({ username }: FetchRepositoriesRequest): Promise<Repository[] | null> {
     this.repositories.findIndex(repository => repository.name === username)
     return this.repositories
   }
