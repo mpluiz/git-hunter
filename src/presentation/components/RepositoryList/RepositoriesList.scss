@@ -1,0 +1,23 @@
+.repository-list {
+  display: flex;
+  flex: 1;
+  max-width: unset;
+  padding: var(--dynamic-padding-space);
+  gap: var(--spacing-md);
+
+  &__actions {
+    display: flex;
+    justify-content: flex-end;
+
+    button > p {
+      display: flex;
+    }
+  }
+
+  &__loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+  }
+}
