@@ -12,7 +12,7 @@ export function NavBar({ currentUser }: NavBarProps) {
   const navigate = useNavigate()
 
   return (
-    <BaseContainer className="nav-bar">
+    <BaseContainer className="nav-bar" role="navigation">
       <div className="nav-bar__actions">
         <BaseButton onClick={() => navigate(-1)}>
           <ArrowLeftIcon/>
