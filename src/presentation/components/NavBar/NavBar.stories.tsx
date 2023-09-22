@@ -5,6 +5,7 @@ import { makeUser } from '@tests/factories'
 
 const meta: Meta<typeof NavBar> = {
   component: NavBar,
+  title: 'Navigation/NavBar',
   decorators: [withRouter]
 }
 

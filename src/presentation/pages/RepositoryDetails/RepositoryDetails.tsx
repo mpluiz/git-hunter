@@ -32,8 +32,6 @@ export function RepositoryDetailsPage({ getRepository }: RepositoryDetailsPagePr
     handleGetRepository().catch((error) => Sentry.captureException(error))
   }, [handleGetRepository])
 
-  console.log(currentRepository)
-
   return (
     <BaseContainer className="repository-details-page">
       <NavBar currentUser={getCurrentUser()} />

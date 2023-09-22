@@ -2,7 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { BaseTypography } from '@/presentation/components'
 
 const meta: Meta<typeof BaseTypography> = {
-  component: BaseTypography
+  component: BaseTypography,
+  title: 'Typography/BaseTypography'
 }
 
 export default meta

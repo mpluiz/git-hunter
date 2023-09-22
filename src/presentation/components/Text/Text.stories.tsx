@@ -2,7 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Text } from '@/presentation/components'
 
 const meta: Meta<typeof Text> = {
-  component: Text
+  component: Text,
+  title: 'Typography/Text'
 }
 
 export default meta

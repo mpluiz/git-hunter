@@ -2,7 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { Toast } from '@/presentation/components'
 
 const meta: Meta<typeof Toast> = {
-  component: Toast
+  component: Toast,
+  title: 'Feedback/Toast'
 }
 
 export default meta

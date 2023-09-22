@@ -5,6 +5,7 @@ import { RepositoryProps } from '@/domain/entities/repository.ts'
 
 const meta: Meta<typeof Repository> = {
   component: Repository,
+  title: 'DataDisplay/Repository',
   decorators: [withRouter]
 }
 

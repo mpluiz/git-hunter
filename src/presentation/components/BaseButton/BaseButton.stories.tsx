@@ -4,6 +4,7 @@ import { DiscordLogoIcon } from '@radix-ui/react-icons'
 
 const meta: Meta<typeof BaseButton> = {
   component: BaseButton,
+  title: 'Form/BaseButton',
   argTypes: { onClick: { action: 'clicked' } }
 }
 

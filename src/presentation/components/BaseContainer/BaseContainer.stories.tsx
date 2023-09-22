@@ -2,7 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { BaseContainer, Text } from '@/presentation/components'
 
 const meta: Meta<typeof BaseContainer> = {
-  component: BaseContainer
+  component: BaseContainer,
+  title: 'Layout/BaseContainer'
 }
 
 export default meta

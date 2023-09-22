@@ -5,6 +5,7 @@ import { UserProps } from '@/domain/entities/user.ts'
 
 const meta: Meta<typeof Profile> = {
   component: Profile,
+  title: 'DataDisplay/Profile',
   decorators: [withRouter]
 }
 
