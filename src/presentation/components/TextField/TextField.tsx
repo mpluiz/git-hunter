@@ -7,6 +7,7 @@ interface TextFieldProps extends ComponentProps<HTMLInputElement> {
   name: string
   id?: string
   value?: string | ReadonlyArray<string> | number | undefined;
+  maxLength?: number
 }
 
 export function TextField({ label, name, ...others }: TextFieldProps) {

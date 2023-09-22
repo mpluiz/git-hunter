@@ -5,6 +5,13 @@
 }
 
 body {
-    background-color: var(--color-grey-100);
+    background-color: var(--color-black-100);
     -webkit-font-smoothing: antialiased;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }

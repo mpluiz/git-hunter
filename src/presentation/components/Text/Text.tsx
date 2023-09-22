@@ -8,7 +8,7 @@ interface TextProps extends ComponentProps<HTMLParagraphElement> {
   color?: 'white' | 'black' | 'grey' | 'danger'
 }
 
-export function Text({ children, size, weigth = 'regular', color = 'black', ...others }: TextProps) {
+export function Text({ children, size, weigth = 'regular', color = 'white', ...others }: TextProps) {
   return (
     <BaseTypography className={`text text--${size} text--${weigth} text--color-${color}`} {...others}>
       {children}

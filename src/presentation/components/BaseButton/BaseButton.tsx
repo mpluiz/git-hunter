@@ -32,7 +32,7 @@ export function BaseButton({
       disabled={disabled || loading}
       {...others}
     >
-      <Text size="md" color={variant === 'primary' ? 'black' : 'white'}>{children}</Text>
+      <Text size="md" color={variant === 'primary' ? 'white' : 'black'}>{children}</Text>
       {loading && <Loader size={size} />}
       {(icon && !loading) && <div role="img" className="base-button__icon">{icon}</div>}
     </button>
