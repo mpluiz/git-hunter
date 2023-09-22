@@ -1,0 +1,47 @@
+.repository {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  background: var(--color-black-100);
+  padding: var(--spacing-md);
+  border: var(--border-width-2x) solid transparent;
+  border-radius: var(--border-radius-sm);
+  transition: border-color 0.2s ease 0s;
+
+  &:focus, &:focus-within, &:hover {
+    border-color: var(--color-purple);
+  }
+
+  &__title {
+    a {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-xxs);
+      color: var(--color-purple);
+      text-decoration: none;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+
+    .star {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-xxs);
+      color: var(--color-yellow);
+    }
+
+    .external-link {
+      a {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-xxs);
+        color: var(--color-purple);
+        text-decoration: none;
+      }
+    }
+  }
+}

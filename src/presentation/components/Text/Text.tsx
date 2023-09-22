@@ -16,7 +16,6 @@ export function Text({
   color = 'white',
   ...others
 }: TextProps) {
-  console.log(className)
   return (
     <BaseTypography
       className={classNames(`text text--${size} text--${weigth} text--color-${color}`, className)}

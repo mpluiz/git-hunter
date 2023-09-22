@@ -54,6 +54,7 @@
     --color-success-300: rgb(3, 151, 84);
     --color-danger: rgb(198, 42, 47);
     --color-danger-500: rgb(255, 229, 229);
+    --color-yellow: rgb(234, 197, 79, 1);
 }
 
 @media screen and (max-width: 767px) {

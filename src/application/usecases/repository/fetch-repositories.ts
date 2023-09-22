@@ -5,6 +5,7 @@ import { IRepositoryService } from '@/application/services'
 
 interface FetchRepositoriesUseCaseRequest {
   username: string
+  sort: string
 }
 
 type FetchRepositoriesUseCaseResponse = Either<null, { repositories: Repository[] | null}>
@@ -12,8 +13,8 @@ type FetchRepositoriesUseCaseResponse = Either<null, { repositories: Repository[
 export class FetchRepositoriesUseCase implements IFetchRepositoriesUseCase<FetchRepositoriesUseCaseRequest, FetchRepositoriesUseCaseResponse> {
   constructor(private repositoryService: IRepositoryService) {}
 
-  async execute({ username }: FetchRepositoriesUseCaseRequest): Promise<FetchRepositoriesUseCaseResponse> {
-    const repositories = await this.repositoryService.fetchRepositoriesByUserName(username)
+  async execute({ username, sort }: FetchRepositoriesUseCaseRequest): Promise<FetchRepositoriesUseCaseResponse> {
+    const repositories = await this.repositoryService.fetchRepositories({ username, sort })
 
     return success({ repositories })
   }

@@ -5,9 +5,9 @@ export interface RepositoryProps {
   name: string
   fullName: string
   stars: number
-  language: string
+  language?: string
   description?: string
-  repositoryUrl?: string
+  repositoryUrl: string
 }
 
 export class Repository extends Entity<RepositoryProps> {

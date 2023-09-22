@@ -1,0 +1,14 @@
+.user-details-page {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  padding: var(--dynamic-padding-space);
+  gap: var(--dynamic-padding-space);
+
+  &__left-side {
+    display: flex;
+    flex-direction: column;
+    gap: var(--dynamic-padding-space);
+  }
+}
