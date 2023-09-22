@@ -21,7 +21,7 @@ export function RepositoriesList({ fetchRepositories, repositories, loading = fa
   }
 
   return (
-    <BaseContainer className="repository-list">
+    <BaseContainer className="repository-list" role="list">
       <div className="repository-list__actions">
         <BaseButton onClick={() => fetchRepositories(handleSort())}>
           <CaretSortIcon />
