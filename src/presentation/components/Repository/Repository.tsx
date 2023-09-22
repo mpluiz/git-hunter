@@ -7,16 +7,15 @@ import '@/presentation/components/Repository/Repository.scss'
 
 export interface RepositoryComponentProps extends ComponentProps<HTMLDivElement> {
   repository: RepositoryProps
+  current?: boolean
 }
 
-export function Repository({ repository }: RepositoryComponentProps) {
+export function Repository({ repository, current = false }: RepositoryComponentProps) {
   return (
     <div className="repository">
       <Text className="repository__title" size="lg" weigth="semi-bold">
-         <Link to={`/repositories/${repository.name}/details`}>
-           {repository.name}
-           <ArrowRightIcon />
-         </Link>
+        {current && repository.name}
+        {!current && <Link to={`/repositories/${repository.name}/details`}>{repository.name}<ArrowRightIcon /></Link>}
       </Text>
       <Text>{repository.description}</Text>
       <div className="repository__footer">
