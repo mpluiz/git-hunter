@@ -12,7 +12,7 @@ export interface RepositoryComponentProps extends ComponentProps<HTMLDivElement>
 
 export function Repository({ repository, current = false }: RepositoryComponentProps) {
   return (
-    <div className="repository">
+    <div className="repository" role="listitem">
       <Text className="repository__title" size="lg" weigth="semi-bold">
         {current && repository.name}
         {!current && <Link to={`/repositories/${repository.name}/details`}>{repository.name}<ArrowRightIcon /></Link>}
