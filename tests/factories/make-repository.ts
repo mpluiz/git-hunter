@@ -6,6 +6,7 @@ export function makeRepository(override: Partial<RepositoryProps> = {}): Reposit
     name: 'valid-repository-name',
     fullName: 'valid-name/valid-repository-name',
     stars: 0,
+    repositoryUrl: 'https://fake-repository-url.com',
     language: 'valid-language-name',
     ...override
   })
