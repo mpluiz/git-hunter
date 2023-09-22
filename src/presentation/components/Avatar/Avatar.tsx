@@ -3,7 +3,7 @@ import { Text } from '@/presentation/components'
 import '@/presentation/components/Avatar/Avatar.scss'
 
 interface AvatarProps {
-  src: string
+  src?: string
   fallback: string
   delayMs?: number
 }
