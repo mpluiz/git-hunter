@@ -1,0 +1,25 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: unset;
+  padding: var(--spacing-md);
+  gap: var(--spacing-md);
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-md);
+
+    .active {
+      button {
+        border-color: var(--color-purple);
+      }
+    }
+  }
+
+  button > p {
+    display: flex;
+  }
+}
