@@ -1,0 +1,47 @@
+.loader {
+  --duration: 3s;
+  display: inline-block;
+
+  &--size-md {
+    width: var(--spacing-lg);
+    height: var(--spacing-lg);
+  }
+
+  &--size-lg {
+    width: var(--spacing-xl);
+    height: var(--spacing-xl);
+  }
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    circle {
+      fill: none;
+      stroke: var(--color-purple);
+      stroke-width: 10px;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+
+      stroke-dasharray: calc(200 / 4 * 3) calc(200 / 4) calc(200 / 4 * 3) calc(200 / 4);
+      stroke-dashoffset: 75;
+      animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+    }
+  }
+}
+
+@keyframes pathCircle {
+  25% {
+    stroke-dashoffset: 125;
+  }
+  50% {
+    stroke-dashoffset: 175;
+  }
+  75% {
+    stroke-dashoffset: 225;
+  }
+  100% {
+    stroke-dashoffset: 275;
+  }
+}

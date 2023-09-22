@@ -2,15 +2,17 @@
   $root: &;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: var(--spacing-xs);
   padding: var(--spacing-xs);
   border-radius: var(--border-radius-sm);
-  border: var(--border-width) solid var(--color-grey-100);
-  transition: box-shadow 300ms;
+  border: var(--border-width-2x) solid transparent;
+  transition: border-color 0.2s ease 0s;
   cursor: pointer;
 
-  &:hover {
-    box-shadow: var(--box-shadow-primary);
+  &:not(:disabled) {
+    &:focus, &:focus-within, &:hover {
+      border-color: var(--color-purple);
+    }
   }
 
   &:disabled {
@@ -21,18 +23,26 @@
   &__icon {
     display: flex;
     margin-left: var(--spacing-xs);
+    color: var(--color-white);
+  }
+
+  &--size-md {
+    height: var(--spacing-xl);
+  }
+
+  &--size-lg {
+    height: var(--spacing-xxl);
   }
 
   &--primary {
-    background: var(--color-white);
+    background: var(--color-black-100);
   }
 
   &--secondary {
-    background: var(--color-black);
+    background: var(--color-white);
 
     #{$root}__icon {
-      color: var(--color-white);
+      color: var(--color-black-100);
     }
   }
-
 }

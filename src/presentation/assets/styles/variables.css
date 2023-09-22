@@ -26,6 +26,7 @@
     --icon-size-lg: 32px;
 
     --border-width: 1px;
+    --border-width-2x: 2px;
     --border-radius-xs: 4px;
     --border-radius-sm: 6px;
     --border-radius-md: 8px;
@@ -38,16 +39,21 @@
     --box-shadow-primary: 0 0 1px 2px #666D8014;
 
     --color-black: rgba(13, 13, 18, 1);
+    --color-black-100: rgba(18, 18, 20, 1);
+    --color-black-500: rgb(32, 32, 36);
     --color-white: rgb(255, 255, 255);
-    --color-grey: rgb(246, 248, 250, 100);
-    --color-grey-100: rgb(236, 239, 243, 100);
+    --color-grey: rgb(246, 248, 250, 1);
+    --color-grey-100: rgb(236, 239, 243, 1);
     --color-grey-200: rgba(164, 171, 184, 1);
     --color-grey-300: rgb(128, 136, 151);
     --color-grey-400: rgb(102, 109, 128);
     --color-grey-500: rgb(53, 56, 73);
+    --color-purple: rgb(130, 87, 229, 1);
     --color-success-100: rgba(208, 250, 223, 1);
     --color-success-200: rgba(40, 199, 128, 1);
     --color-success-300: rgb(3, 151, 84);
+    --color-danger: rgb(198, 42, 47);
+    --color-danger-500: rgb(255, 229, 229);
 }
 
 @media screen and (max-width: 767px) {

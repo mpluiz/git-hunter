@@ -16,10 +16,10 @@ Eu, como usuário, desejo ver os detalhes do usuário buscado
 ```
 
 Eu, como usuário, desejo ver a listagem dos repositórios desse usuário que foi buscado, ordenados pelo número decrescente de estrelas
-`getRepositoriesByUser(username, params)`
+`fetchRepositories(username, params)`
 
 Eu, como usuário, desejo poder alterar a ordem da listagem de repositórios
-`getRepositoriesByUser(username, params)`
+`fetchRepositories(username, params)`
 
 Eu, como usuário, desejo ver uma página com os detalhes de um repositório
 ```
