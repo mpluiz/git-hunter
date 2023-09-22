@@ -16,7 +16,7 @@ describe('FetchRepositoriesUseCase', () => {
 
   it('should success to fetch a repository when provide a valid username', async () => {
     inMemoryRepositoryService.repositories = [repository]
-    const response = await sut.execute({ username: 'valid-name' })
+    const response = await sut.execute({ username: 'valid-name', sort: 'desc' })
 
     expect(response.isSuccess()).toBe(true)
     expect(response.isSuccess() && response.value?.repositories).toHaveLength(1)
