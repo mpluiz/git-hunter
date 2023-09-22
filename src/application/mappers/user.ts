@@ -6,6 +6,8 @@ export class UserMap extends Mapper {
     return User.create({
       id: raw.id,
       name: raw.name,
+      userName: raw.login,
+      email: raw.email,
       followers: raw.followers,
       following: raw.following,
       bio: raw.bio,
