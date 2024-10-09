@@ -5,8 +5,8 @@
 
 # GITHUNTER
 
-- [app](https://githunter.mpluiz.com.br)
-- [storybook](https://storybook.githunter.mpluiz.com.br)
+- [app](https://githunter.marcosluiz.dev)
+- [storybook](https://storybook.githunter.marcosluiz.dev)
 
 ## Roadmap
 
